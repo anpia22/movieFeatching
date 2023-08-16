@@ -1,0 +1,57 @@
+section {
+  margin: 1rem auto;
+  width: 90%;
+  max-width: 40rem;
+  text-align: center;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+}
+.loader{
+  position: relative;
+}
+.loader::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border: 2px solid #460897;
+  border-top: 0px;
+  animation: rotate 2s infinite linear ;
+  padding: 0px;
+  position: absolute;
+  left: 80px;
+  border-radius: 50%;
+  border-right: 0;
+}
+@keyframes rotate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.loader > h3:nth-child(1) {
+  color: midnightblue;
+}
+
+
+button {
+  font: inherit;
+  cursor: pointer;
+  background: #230052;
+  border: 1px solid #230052;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 20px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover,
+button:active {
+  background-color: #460897;
+  border-color: #460897;
+}
